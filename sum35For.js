@@ -2,9 +2,32 @@
 // The function outputs the sum of all multiples of 3 and 5 that are less than that number.
 
 function sum35For(N) {
+  for (let val = 1; val <= N; val += 1) {
+      let div3;
+      let div5;
+    }
+    if (val % 3 == 0) {
+        div3 = true;
+    } else {
+        div3 = false;
+    }
 
-}
+    // Next determine if val is divisible by 5
+    if (val % 5 == 0) {
+        div5 = true;
+    } else {
+        div5 = false;
+    }
 
+    // Now log the appropriate response to the console
+    if (div3 || div5) {
+      document.write("x");
+    } else {
+       console.log(val);
+    }
+    console.log('There are ' + factors + 'multiples of 3 and 5 that are less than '
+    + N + 'Their sum is ' + sum '.' )
+  }
 //Try out your function here.
 sum35For(6);
 sum35For(20);
